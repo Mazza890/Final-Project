@@ -1,0 +1,411 @@
+/*  Applies design for the Cape Town website */
+
+
+/* General Layout */
+body {
+  font-family: 'Segoe UI', 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(220, 235, 250); /* Soft Light Blue */
+  color: rgb(30, 30, 60); /* Deep Slate */
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+  padding: 20px;
+}
+
+section {
+  background-color: rgb(245, 250, 255); /* Lighter Section */
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 30px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+/* Header */
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(200, 225, 250);
+  padding: 20px;
+  border-bottom: 3px solid rgb(0, 102, 204);
+}
+
+.logo-title {
+  font-size: 1.8em;
+  font-weight: bold;
+  color: rgb(0, 51, 102);
+}
+
+/* Navigation */
+.nav-links {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: rgb(0, 102, 204);
+  font-weight: bold;
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  background-color: rgb(180, 210, 240);
+  color: rgb(0, 51, 102);
+}
+
+/* Section Headings */
+.section-title {
+  color: rgb(0, 102, 204);
+  margin-bottom: 15px;
+}
+
+/* Home Page Image Styling */
+.home-photo {
+  width: 400px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  display: block;
+  margin: 20px auto;
+}
+
+.home-photo:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+/* About Page: Developer Photo Styling */
+.about-photo {
+  width: 280px;
+  height: auto;
+  object-fit: cover;
+  display: block;
+  margin: 20px auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.about-photo {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  display: block;
+  margin: 30px auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+/* Image Styling */
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  justify-items: center;
+  margin-top: 1rem;
+}
+
+.medium-photo {
+  width: 300px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+figcaption {
+  text-align: center;
+  font-size: 0.9rem;
+  color: rgb(90, 90, 90);
+  margin-top: 0.5rem;
+}
+
+
+/* Citations and Captions */
+p[source="caption"],
+p[source="citation"] {
+  font-style: italic;
+  font-size: 0.85em;
+  color: rgb(100, 100, 100);
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Review style */
+p#reviews {
+  background-color: rgb(249, 249, 249); /* Soft light gray */
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+.review-card {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  gap: 1rem;
+}
+
+.review-avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid rgb(200, 200, 200); /* Subtle border */
+}
+
+blockquote {
+  font-style: italic;
+  background: rgb(255, 255, 255); /* White background */
+  padding: 1rem;
+  border-left: 5px solid rgb(0, 123, 143); /* Deep aqua blue */
+  color: rgb(50, 50, 50); /* Slightly dark text */
+}
+
+.reviewer-name {
+  display: block;
+  margin-top: 0.5rem;
+  font-weight: bold;
+  color: rgb(85, 85, 85); /* Mid-tone gray */
+}
+
+
+/* Embedded Videos */
+.video-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 40px 0;
+  gap: 30px;
+}
+
+.video-row.reverse {
+  flex-direction: row-reverse;
+}
+
+.video-item {
+  flex: 1 1 480px;
+  max-width: 560px;
+}
+
+.video-item iframe {
+  width: 100%;
+  height: 315px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.video-credit {
+  font-size: 0.85rem;
+  color: #555;
+  margin-top: 8px;
+  font-style: italic;
+}
+
+
+.destination-photo {
+  width: 620px;
+  height: auto;
+  object-fit: cover;
+  display: block;
+  margin: 45px auto;
+  border-radius: 8px;
+  box-shadow: 0 10px 14px rgba(0,0,0,0.40);
+}
+  
+
+ 
+
+
+
+
+/* Table */
+.styled-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 2rem 0;
+  font-size: 1rem;
+  font-family: 'Segoe UI', sans-serif;
+  box-shadow: 0 0 10px rgb(200, 200, 200);
+}
+
+.styled-table thead {
+  background-color: rgb(0, 123, 143);
+  color: rgb(255, 255, 255);
+  text-align: left;
+}
+
+.styled-table th,
+.styled-table td {
+  padding: 12px 15px;
+  border: 1px solid rgb(230, 230, 230);
+}
+
+.styled-table tbody tr {
+  background-color: rgb(255, 255, 255);
+}
+
+.styled-table tbody tr:nth-child(even) {
+  background-color: rgb(245, 245, 245);
+}
+
+.styled-table tbody tr:hover {
+  background-color: rgb(255, 245, 220);
+  transition: background-color 0.3s ease;
+}
+
+/* Tour Package Card Grid */
+.package-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+  padding: 1rem 0;
+}
+
+.package-card {
+  background-color: rgb(245, 250, 255);
+  border: 1px solid rgb(220, 235, 250);
+  border-left: 6px solid rgb(0, 123, 143);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease;
+}
+
+.package-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.package-card h3 {
+  margin-top: 0;
+  color: rgb(0, 102, 204);
+  font-size: 1.2rem;
+}
+
+.package-card p {
+  font-size: 0.95rem;
+  color: rgb(60, 60, 80);
+  margin-bottom: 0;
+}
+
+
+.smart-travel-tips {
+  background-color: rgb(240, 245, 255); /* soft blue */
+  border-left: 4px solid rgb(128, 0, 128); /* purple accent */
+  padding: 18px 14px;
+  max-width: 600px;
+  margin: 30px auto;
+  border-radius: 8px;
+  font-family: 'Segoe UI', sans-serif;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.smart-travel-tips h2 {
+  font-size: 1.3rem;
+  color: rgb(75, 0, 130);  /* deep purple */
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.smart-travel-tips ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.smart-travel-tips li {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin-bottom: 8px;
+  padding-left: 22px;
+  position: relative;
+}
+
+.smart-travel-tips li::before {
+  content: "🛫";
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 1rem;
+  color: rgb(75, 0, 130);  /* match heading */
+}
+
+
+/* Footer Layout */
+.site-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color: rgb(200, 225, 250);
+  padding: 20px;
+  font-size: 0.9em;
+  color: rgb(30, 30, 60);
+  border-top: 3px solid rgb(0, 102, 204);
+  flex-wrap: wrap;
+  margin-top: auto;
+  min-height: 100px;
+}
+
+.site-footer .footer-left,
+.site-footer .footer-center,
+.site-footer .footer-right {
+  flex: 1;
+  min-width: 180px;
+  margin: 10px;
+}
+
+.site-footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+.site-footer ul li {
+  margin-bottom: 5px;
+}
+
+.site-footer a {
+  color: rgb(0, 102, 204);
+  text-decoration: none;
+}
+
+.site-footer a:hover {
+  color: rgb(0, 51, 102);
+  text-decoration: underline;
+}
+
+/* Contact Form */
+form input[type="text"],
+form input[type="email"],
+form textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid rgb(180, 210, 240);
+  border-radius: 4px;
+  margin-bottom: 15px;
+}
+
+form input[type="submit"] {
+  background-color: rgb(0, 102, 204);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+  background-color: rgb(0, 51, 102);
+}
